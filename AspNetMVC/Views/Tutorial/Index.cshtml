@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>ASP.NET MVC5 Tutorial</h2>
+<p>
+    <h4> List of tutorials  </h4>
+</p>
+ 
+
+<table class="table">
+    <tr>
+        <th>
+            <h3>Project Name</h3>
+        </th>
+        <th>
+            <h3>Project Demo</h3>
+        </th>
+        <th>
+            <h3>Project Code</h3>
+        </th>
+        <th>
+            <h3>Details</h3> 
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <h5>CRUD with List</h5>
+        </td>
+        <td>
+            @Html.ActionLink("Project Demo", "Index", "CrudList")
+        </td>
+        <td>
+             <a href="https://github.com/Adel-alfa/MVCTutorial" rel="nofollow"> GitHub  </a> 
+        </td>
+        <td>
+             @Html.ActionLink("Read Me", null, null, new Dictionary<string, object>
+              { { "data-toggle", "tooltip" }, { "data-placement", "right" },
+              { "title","Coming soon!"} }) 
+             
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h5>Login and Registration form</h5>
+        </td>
+        <td>
+            @Html.ActionLink("Demo", null, null, new Dictionary<string, object>
+              { { "data-toggle", "tooltip" }, { "data-placement", "right" },
+              { "title","Coming soon!"} }) 
+        </td>
+        <td>
+             @*@Html.ActionLink("GitHub", null, null, new Dictionary<string, object>
+                { { "data-toggle", "tooltip" }, { "data-placement", "right" },
+                { "title","Coming soon!"} })*@ 
+        </td>
+        <td>
+           @*@Html.ActionLink("Read Me", null, null, new Dictionary<string, object>
+             { { "data-toggle", "tooltip" }, { "data-placement", "right" },
+             { "title","Coming soon!"} })*@ 
+        </td>
+
+    </tr>
+
+</table>
